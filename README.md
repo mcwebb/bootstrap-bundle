@@ -1,11 +1,11 @@
 # Bootstrap for Ditto
-## a Ditto bundle
+**a Ditto bundle**
 
 You can pick and choose the parts of Bootstrap to load.
 
 ## Use
 ```php
-Engine::load()->module('Bootstrap')
+Engine::load()->bundle('Bootstrap')
 	->load([
 		'buttons',
 		'forms'
