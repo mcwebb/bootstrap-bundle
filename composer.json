@@ -14,7 +14,7 @@
     ],
     "require": {
         "ditto/ditto": ">=0.3",
-        "ditto/jquery-bundle": "dev-master"
+        "ditto/jquery-bundle": ">=0.1.*"
     },
     "autoload": {
         "psr-0": {
