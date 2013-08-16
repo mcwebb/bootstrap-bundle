@@ -79,15 +79,15 @@ class Bundle extends \Ditto\Core\Bundle {
 	}
 
 	public function load($modules = null) {
-		if (\Ditto\Core\Engine::getEnvironment() == 1)
+		if (Engine::getEnvironment() == 1)
 			$pathAffix = '';
 		else $pathAffix = 'min.';
 
 		if (is_null($modules)) {
-			\Ditto\Core\Engine::addGlobalScript(
+			Engine::addGlobalScript(
 				self::$root ."js/bootstrap-full.{$pathAffix}js"
 			);
-			\Ditto\Core\Engine::addGlobalStyle(
+			Engine::addGlobalStyle(
 				self::$root ."css/bootstrap-full.{$pathAffix}css"
 			);
 			return $this;
@@ -114,11 +114,11 @@ class Bundle extends \Ditto\Core\Bundle {
 						self::$root_abs .
 						"css/bootstrap-{$module}.{$pathAffix}css"
 					)) {
-						\Ditto\Core\Engine::addGlobalScript(
+						Engine::addGlobalScript(
 							self::$root .
 							"js/bootstrap-{$module}.{$pathAffix}js"
 						);
-						\Ditto\Core\Engine::addGlobalStyle(
+						Engine::addGlobalStyle(
 							self::$root .
 							"css/bootstrap-{$module}.{$pathAffix}css"
 						);
