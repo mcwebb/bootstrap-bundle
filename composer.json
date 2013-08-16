@@ -13,7 +13,8 @@
         }
     ],
     "require": {
-        "ditto/ditto": ">=0.3"
+        "ditto/ditto": ">=0.3",
+        "ditto/jquery": ">=0.1"
     },
     "autoload": {
         "psr-0": {
