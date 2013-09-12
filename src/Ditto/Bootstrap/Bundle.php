@@ -107,6 +107,7 @@ class Bundle extends \Ditto\Core\Bundle {
 				case 'carousel':
 				case 'buttons':
 				case 'alerts':
+				case 'tokenfield':
 					if (file_exists(
 						self::$root_abs .
 						"js/bootstrap-{$module}.{$pathAffix}js"
